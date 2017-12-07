@@ -16,7 +16,7 @@
 			background-color: gray;
 		}
 		label{
-			color: white;
+			color: black ;
 			display: block;
 		}
 		input{
@@ -26,14 +26,38 @@
 	</style>
 </head>
 <body>
+	<form>
+		<label>Search!</label>
+		<input type="search" name="search" id="search" results="5">
+
+	</form>
 <form action="mailto:bax1111@gmail.com" method="post" autocomplete="on" id="form1">
 	<h1>Sign Up</h1>
 	<label for="color">Select a color</label>
 	<input type="color" id="color" name="color" value="#ffff00">
 	<br>
 	<label for="date">Choose a date</label>
-	<br>
 	<input type="date" name="date" id="date" value="2020-01-01">
+	<br>
+	<label for="email">Your email:</label>
+	<input type="email" name="email" id="email">
+	<br>
+	<label>Enter a number:</label>
+	<input type="number" name="number" id="number" value="100">
+	<br>
+	<label>Choose a value from 1 (poor) to 5 (Great!)</label>
+	<span style="color: white">1</span>
+	<input style="width: 80%" type="range" name="range" id="range" min="1" max="5">
+	<span style="color: white">5</span>
+	<br>
+	<label for="phone">Phone:</label>
+	<input type="tel" name="phone" id="phone">
+	<br>
+	<label for="time">Best time to reach you:</label>
+	<input type="time" name="time" id="time">
+	<br>
+	<label for="url"> Your URL:</label>
+	<input type="url" name="url" id="url" value="http://www.">
 	<br>
 	<input type="submit">
 	<br>
